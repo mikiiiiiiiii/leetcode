@@ -1,0 +1,115 @@
+我被出到的coding 题目是 find the optimal weights， 这道题貌似最近经常考，大家好好复习。
+这道题目是要求从一个给定的数组中找出一对数组元素，这两个数组元素加起来和要等于一个数值，这个数值必须为最大值，
+且不能 超过一个给定数值（capacity）。 这道题目的思路是使用双指针求解(two pointers), 类似于 leetcode
+上面的 two sum II 那题， 定义指针 i, j 不断向中心移动直到找到最优解 （the optimal weights）。
+
+还有一道题目是二月份出的，silding window minimum, 这题目需要用deque 双端队列来做。
+跟leetcode 上面原题，改一个小于号就行了。
+
+我卡住的题是{2，8，5，6，8  ？，11}，还是经验不足啊，把这个数组分奇偶来看，
+{2，5，8，11} {8，6，？}，自然很容易看出来应该填4。
+另外阅读题考的是给一堆条件决定是否雇佣人那题，以及5男3女选出只是3男1女那题。
+这两道阅读理解分别有几个小题，建议大家仔细阅读题设，有的题设是要你4个选项找出1个符合要求的，
+有的题设则是4个选项找出一个invalid的（我自己就没读得太仔细）。
+而且每一小题答案确认提交后就不能修改了，有题我点的太快，后来又后悔没有仔细看清。
+
+有道longest palindrome，还有两道没见过 题很长不太记得了…但是都用的priorityqueue
+
+code有70min，我抽的是rotate image 和 sjf，我用的java。 需要重点说一下的是sjf，如果有用到优先队列，
+可能会编译不过。下午做的时候第一次编译就没过，然后报的错还完全看不懂，当场吓尿了。。。当时特别慌，
+之后逼自己静下心来仔细检查了一遍，发现在重写comparator那里没有加数组的长度，之后补上就全过了。
+希望后来的小伙伴们多多注意。另外，我还犯了一个很sb的错误，把poll写成了roll。。。结果编译报错，
+关键是我检查了好几遍，觉得自己写的完全没错，就是roll啊啊啊，瞎了。。。幸好最后关头发现了。。。
+
+coding题是 search 2D matirx II, 要求返回 一个 （row, col）否则（－1，－1）。
+leetcode原题Search a 2D Matrix II
+
+subtree and rotate matrix.
+
+有个char[][] board 找直线（横线，竖线，斜线都行）上的单词，dfs解决。
+
+分割一个很长的String，求所有可能性，lc原题吧，也是dfs。
+
+Alexa组，问tree和map区别，map的原理，什么时候用tree，什么时候用map？
+
+355. Design Twitter
+
+two sum pair
+
+我目前总结到的oa1可能考到的coding题供大家参考：
+K Nearest Points,
+Window Minimum,
+矩阵路径最小值的最大值，
+findOptimalWeight,
+判断两个长方形是否重叠，
+insert value into a circle linkedlist
+remove vowel,
+grey code,
+right rotation
+
+Window Minimum。具体题目如下：
+给了一个ArrayList：4, 2, 12, 11, -5，窗口size为2，返回的ArrayList为：2, 2, 11, -5。
+这里窗口size是一个参数。
+Leetcode是求最大.差不多.  https://leetcode.com/problems/sliding-window-maximum/
+类似LeetCode里面Sliding Window Maximum吗，方法应该一样啊，只不过是求最大变成最小，deque就实现了
+public class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
+
+        if (nums == null || k <= 0) {
+            return new int[0];
+        }
+        int n = nums.length;
+        int[] r = new int[n-k+1];
+        int ri = 0;
+        // store index
+        Deque<Integer> q = new ArrayDeque<>();
+        for (int i = 0; i < nums.length; i++) {
+            // remove numbers out of range k
+            while (!q.isEmpty() && q.peek() < i - k + 1) {
+                q.poll();
+            }
+            // remove larger numbers in k range as they are useless
+            while (!q.isEmpty() && nums[q.peekLast()] > nums[i]) {
+                q.pollLast();
+            }
+            // q contains index... r contains content
+            q.offer(i);. visit 1point3acres.com for more.
+            if (i >= k - 1) {
+                r[ri++] = nums[q.peek()];
+            }
+        }
+        return r;
+
+    }
+}
+
+Coding遇到了新题，真是日了狗了。
+题目如下：
+Maximum Minimum Path
+给一个int[][]的matirx，对于一条从左上到右下的path p_i，p_i中的最小值是m_i，求所有m_i中的最大值。只能往下或右
+比如：
+[8, 4, 7]
+[6, 5, 9]
+有3条path：
+8-4-7-9 min: 4
+8-4-5-9 min: 4
+8-6-5-9 min: 5
+return: 5
+二维DP加维护最小值。
+
+
+題目有點長,名稱好像是findOptimalWeights,但大致是這樣:
+/* 一個已經預設好的class */
+class Container {
+    public double first;
+    public double second;
+}
+
+現在給某個容量(double capacity), 還有一個array(double[] weights), 和int numOfContainers
+主要是要在array中選出兩個weights總和小於等於capacity但最接近capacity
+然後指定到一個Container object並且return
+first和second的順序並不影響
+numOfContainer在java裡好像也是沒有用的,因為double[]本身就自帶length資訊
+public Container findOptimalWeights(double capacity, double[] weights, int numOfContainers)
+
+最後用了最簡單的方法兩個 for loop找總和最接近capacity的pair
