@@ -1,0 +1,36 @@
+21分钟，7道Debug题目，大概4分钟搞定，等到8分钟才交的。
+我小结了地里的Debug题目，汇总如下：
+1. countDigits, 求num%count, count为num的位数, 加一个int input = num, input%m;
+2. sortArray, 选择排序, decending order, 降序, 判断条件里的>换成<
+3. replaceValues, 若array长度为奇数全换为1偶数换为0,  i<=len, j<=len改成 i<len, j<len
+4. sortArray, 另一种排序，decending降序，>换成<
+5. ReverseArray, len += 1 改为 len -= 1
+6. removeElement, i++改为i+1
+7. printPattern, OddEvenNumber, 输出奇偶数, for添加大括号
+8. countOccurence, 返回value在array中出现的次数, while里面最后加上 i++
+9. checkGrade，成绩打分ABCD，判断输入的数在什么范围， 两个|| 改成 &&
+10. sumArray, 素组求和，sum = arr 改为 sum += arr
+11. pattern, 输出 a ab abc abcd cout(ch++) 改为 cout(print++)，好像还有个编译错误
+12. manchesterCode, 输出两个元素相同输出0, 不同输出1,  改为result = (A!=A[i-1])
+13. removeDuplicates, 用的arr[k+1],  for里 k < length 改为 k < length - 1
+14. array 奇数偶数, for循环里, i+=2 改为i++
+15.print 1111  括号错误
+16.selection sort, ascending order, arr[index_of_min] > arr[x] 改为 > arr[y]
+17. arrayOperation < >反了
+
+
+1.reverseArray. 改成len --
+2:descending array.
+3.arr替换，ood->1， even->0，
+4.countOccurence(arr,len,value). 统计某个值出现次数。
+5.grade，给个成绩（79），输出字母成绩，A,B,C,D
+6.Manchester(arr, len); if语句， == 改成 !-, 并加入 i ==0 的判断。
+
+1)计算一个array中所有元素的和, 把sum = arr 改成 sum += arr.
+2)从一个array中删除指定index的元素. 错在用for循环的同时, 循环内部还用了额外的i++
+3)忘了是要干啥了, 看完题直接点compile, 输出提示超出限定时间, 直接看出是while循环中i没有在循环中自加.
+4)count指定元素在一个array中出现的次数, 忘了错哪了, 也可能其实是3)的错误, 我记不清了.
+5) 输出某数自己对其位数的余数 比如22 就是 22%2, 555就是 555%3. 错误在计算位数的时候
+    更改了输入值, 就是前面的22, 555这样. 多声明一个变量保存输入值就可以了.
+6) 要输出: 11 1111 111111 两个嵌套的for循环, 把大括号都加上就对了.
+7) 要按照decending排序, 但是结果是asending. 直接把小于号改成大于号就行.

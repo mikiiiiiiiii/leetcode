@@ -1,0 +1,88 @@
+1. FASTER : HCUVGT :: SLOWER : ? UNQYGT 很简单+2即可
+2. BECD : FTGH :: JMKL : ? NQOP 同上，+4
+3. PDM, KJH, TSQ, UVS 数字-1-2，只有最后一个不同
+4. FHKO, CEHL, ZBEJ, XZCG 数字+2 +4
+5. PRS, TVX, FIK, LME 瞎猜的
+6. KIDNEY : YENDIK :: MUSCLE : ? ELCSUM 顺序翻转即可
+7. EXAM : FYBN :: TEST : ? UFTU 字母各+1
+8. 0, 3, 8, 5 15, ? 24 两个数字之间+3 +5 +7 +9
+9. 0, 1, 1, 2, 4, 8, ? 16 每个数字是前面所有数字之和
+10. 小明向北走11mile，然后向南30mile，然后又向北30mile，问小明位置
+11. 小明东走4，北走8，西走2，问相对初始点方向（答案应该写东北）
+12. A-B表示A加B，A#B表示A乘B，A/B表示A大于等于B，A？B表示A小于B。
+    给出条件： (V # X) / (V – X), X ? Y and Z/Y 翻译过来即V*X >= V+X, X < Y, Z >= Y
+    问以下两个结论哪个正确 1. X < Z 2. V+X < V*X 我选的是1
+13. S在一个叫做ARA的organization工作，由于bipolar和disorder，被fired了。
+    问以下表述哪个正确（这个具体记不清了）
+14. 直接转前辈的面经：印度公司在radio上做广告，记忆没错的话，选B。
+    大意是，radio覆盖面广，公司向推广自己的，应该去上面做广告。
+    It has been provenby research that in India, a company which purchases
+    saturation radioadvertising will get maximum brand recognition.
+    a) A highdegree of brand recognition will help a company win a higher
+      share of themarket.
+    b) Radiohas wide listenership and companies intending to increase their
+      awareness,should advertise it.
+    c) Formaximum brand recognition, a company need not spend on media
+      channels otherthan radio publicizing.
+    d) Brandrecognition in India is more heavily dependent on where the
+      brand advertisesthan the quality of its offering.
+    原题说的saturation advertising是指同一个广告反复宣传，就好像脑白金的洗脑歌一样。。
+    而研究表明通过这种广播，可以收获最大的品牌认同度。
+    A.高品牌认同度使公司获得更高的市场份额（研究说的是宣传与认同度的关系，
+      没有涉及市场份额）（品牌认知度和市场份额的关系未在题目条件中提及，无关联）
+    B.广播有不错的听众基础，如果公司想提高他们的知名度认同度，应该考虑通过这种方式.
+    C.为了达到最大的品牌宣传效果，公司不应该考虑广播之外的宣传方式 （广播频率max导致
+      宣传效果max也只是广播频率的影响，并不代表其他宣传渠道如何）。（并未说明其他广告
+      渠道对最大化品牌认知度的贡献，所以不该武断排除其他一切非收音机渠道的广告策略）
+    D. 在印度，品牌认同更看宣传的where，而不是质量 （同样原文没提到质量和效果之间的
+      关系）（题目条件未提及广告质量，无关联）
+15. 问想要求今年有多少个冰箱sold了，需要下述哪几个条件
+    1. 今年售出的冰箱是去年的3倍
+    2. 去年sold了40个冰箱 我的答案是两个条件都需要
+16. 在以下4种元素中（锂，钠，钾，铯）L能量随着原子的半径增加而减少，想要求那个L能量最小，
+    需要下述哪几个条件
+    1. 锂的原子半径最小
+    2. 铯比锂和钾的半径都大 我的答案是所有条件都不能确定
+17. 想要享受公司提供的住宿，给出以下8个条件：
+    1. 至少10年在公司工作工作，其中至少4年是manager
+    2. 包括自己在内，family人数不能超过5人
+    3. 以58岁为退休年龄，至少还要工作5年才能退休
+    4. 没有自己的house
+    5. 不能住在配偶的house里
+    6. 如果仅不满足1，而且还是manager的话，上报给Finance Director
+    7. 如果仅不满足3，而且还是senior manager的话，上报给Manager Director
+    8. 如果是从外地搬来的，可以不满足条件1.
+    Case A：Jonh家里3个人，没有房子，作为senior manager 4年，一共工作12年，
+        2020年退休，问是否满足
+18. Case B: 老王家里3个人租房子住，作为manager 5年，
+        工作11年，年龄42岁
+19. 想要获得promotion，给出以下10个条件：
+    1. 至少工作5年
+    2. 至少获得学士学位
+    3. 写作成绩不低于60
+    4. Group discussion成绩不低于65
+    5. Interview成绩不低于 60
+    6. 无犯罪记录
+    7. 年龄在30～45岁之间
+    8. 学术大于60
+    9. 如果不满足3，而且group discussion成绩不低于75，interview不低于70，
+      上报给general manager
+    10. 如果不满足8，上报给executive director
+20. 同一道题的Case B
+21～25. 八产品： 题干是： 共有8个产品 mixer， iron, blender,water pump, geyser,
+    juicer,heater,ginber. 4个人: Alan,Betty,Cathy,Diana 。每个人生产不同的两种产品。
+    Alan 和betty分别生产 mixer和iron，但是不知道具体谁生产，并且mixer不能和blender
+    同一个人生产，cathy生产water pumper， Diana生产geyser.
+    A manufacture company has 8 products and 4 divisions. Four divisions are
+    lead by Alan, Betty, Cathy, Diana. The 8 products are: mixer, iron, water
+    pump, geyser, juicer, blender, grinder, and heater. Each division produces
+    2 products, no 2 divisions produces the same product. Diana’s division
+    produced Geyser, Cathy’s division produces water pump. Mixer and iron
+    are produced by division lead by Alan and Betty respectively. The division
+    that produces mixer doesn’t produce blender. Four questions:
+    1. if the division that produces mixer doesn’t produce juicer, which of
+      the following statement is true?
+    2 ： 如果mixer 和juicer同一个组生成，那么共有几种可能的排列组合
+    3 ：如果生产alan生产mixer和heater，那么betty生产什么
+    4. if the division that produces mixer also produces juicer, how many ways
+      are there for product pairs? (3! = 6)
